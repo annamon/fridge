@@ -1,0 +1,14 @@
+<h2>새로운 식재료를 추가해주세요</h2>
+
+<%= form_tag '/foods/create', method: 'food' do %>
+
+    <p>
+        <h4>식재료 이름</h4>
+        <%= text_field_tag 'input_name', nil %>
+    </p>
+    <p>
+        <h4>유통기한</h4>
+        <%= date_field 'input_date', nil %>
+    </p>
+        <%= submit_tag '등록하기' %>
+<% end %>
